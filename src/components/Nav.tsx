@@ -19,7 +19,7 @@ function Nav() {
           <li><a href="#contact" className="page-links contact"><span className="nums">04.</span><span className="items">Contact</span></a></li>
 
           <li>
-            <button className="resume" onClick={() => window.open("/JaydonHodge-resume.pdf", "_blank")}>
+            <button className="resume" onClick={() => window.open("/portfolio/JaydonHodge-resume.pdf", "_blank")}>
               Resume
             </button>
           </li>
