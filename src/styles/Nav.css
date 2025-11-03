@@ -1,0 +1,189 @@
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+  font-size: 1rem;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-bar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 1rem;
+  width: calc(100% - 2rem);
+  height: auto;
+  z-index: 999;
+  background-color: #282a3a;
+}
+
+/* ================== LOGO BUTTON ==================*/
+.logo {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #615efc;
+  background-color: #20222c;
+  border-radius: 6px;
+  display: flex;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-bar .logo a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  position: relative;
+  padding: 0;
+}
+
+.nav-bar .logo a>img {
+  width: 5rem;
+  height: 5rem;
+  top: 1px;
+  left: 2px;
+  transform: translate(-14px, -16px);
+}
+
+/* ================== PAGE LINKS ==================*/
+.nav-bar .nav-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #282a3a;
+  margin: 0;
+}
+
+.nav-bar .nav-content .nav-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-bar li>a {
+  text-decoration: none;
+  margin-left: 25px;
+  padding: 0.2rem;
+  display: block;
+  color: #ccd6f6;
+  position: relative;
+}
+
+.nums {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: none;
+}
+
+.nav-bar li>a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #615efc;
+  margin-left: 5px;
+  transition: ease-in-out 0.3s;
+}
+
+.nav-bar li>a.about::before {
+  transform: translateX(-0.5px);
+}
+
+.nav-bar li>a.projects::before {
+  transform: translateX(-0.5px);
+}
+
+.nav-bar li>a.experience::before {
+  transform: translateX(-1px);
+}
+
+.nav-bar li>a.contact::before {
+  transform: translateX(-0.5px);
+}
+
+.nav-bar li>a.about:hover::before {
+  width: 91.5%;
+}
+
+.nav-bar li>a.projects:hover::before {
+  width: 93%;
+}
+
+.nav-bar li>a.contact:hover::before {
+  width: 93%;
+}
+
+.nav-bar li>a.experience:hover::before {
+  width: 95.5%;
+}
+
+.nav-bar .items {
+  transition: ease-in-out 0.3s;
+}
+
+.nav-bar li>a:hover {
+  color: #615efc;
+}
+
+.nav-bar li>a {
+  transition: ease-in-out 0.1s;
+}
+
+.nav-bar li>a:active {
+  transform: scale(0.9);
+}
+
+/* ================== RESUME BUTTON ==================*/
+button.resume {
+  margin-left: 30px;
+  border: 2px solid #615efc;
+  line-height: 2.5;
+  padding: 0 10px;
+  font-size: 1rem;
+  text-align: center;
+  color: #ccd6f6;
+  border-radius: 5px;
+  background-color: #20222c;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  transition: ease-in-out 0.2s;
+}
+
+button.resume:hover {
+  transform: translate(-0.2rem, -0.2rem);
+  box-shadow:
+    rgba(97, 94, 252, 0.4) 0.08rem 0.08rem,
+    rgba(97, 94, 252, 0.3) 0.12rem 0.12rem,
+    rgba(97, 94, 252, 0.2) 0.14rem 0.14rem;
+  color: #615efc;
+}
+
+button.resume:active {
+  transition: ease-in-out 0.1s;
+  transform: scale(0.95);
+  box-shadow:
+    rgba(97, 94, 252, 0) 1.5px 1.5px,
+    rgba(97, 94, 252, 0) 2px 2px,
+    rgba(97, 94, 252, 0) 3px 3px;
+}
+
+/* ================== DIVIDER ==================*/
+.nav-bar .nav-divide {
+  display: flex;
+  background-color: #4d515c;
+  border-radius: 10px;
+  width: 100%;
+  height: 1px;
+}
