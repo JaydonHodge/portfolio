@@ -6,7 +6,7 @@ function Nav() {
       <div className='nav-content'>
         <div className="logo">
           <a id="logo-anch" href="#home">
-            <img src="/images/bolt.png" alt="Jaydon Hodge portfolio logo" />
+            <img src="/portfolio/images/bolt.png" alt="Jaydon Hodge portfolio logo" />
           </a>
         </div>
         <ul className="nav-list">
