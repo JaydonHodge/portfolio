@@ -3,6 +3,11 @@
   src: url(/fonts/JetBrainsMono-Regular.ttf);
 }
 
+@font-face {
+  font-family: SF Pro Text;
+  src: url(/fonts/SFProText-Regular.ttf);
+}
+
 
 :root {
   font-family: "JetBrains Mono", monospace;
@@ -26,17 +31,13 @@
   scroll-margin-top: 1rem;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  min-width: 320px;
-  min-height: 100vh;
-  padding-top: 4em;
-  padding-left: 1em;
-  padding-right: 1em;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+body {
+  margin: 0;
+  padding: 0;
 }
