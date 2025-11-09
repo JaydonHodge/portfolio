@@ -1,7 +1,46 @@
 #home {
+  scroll-margin-top: 5rem;
   display: flex;
   width: 100%;
   flex-direction: column;
   height: 20rem;
-  color: #8892b0;
+  color: #d1dcff;
+}
+
+#home p {
+  color: #646cff;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#home h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+#home #title {
+  color: #757b8f;
+}
+
+#home .cursor {
+  margin-top: -0.7rem;
+  line-height: 1;
+}
+
+#home .home-description {
+  margin-top: 1.5rem;
+  width: 50%;
+}
+
+#home .home-description p {
+  color: #757b8f;
+}
+
+#home .home-description p .highlight {
+  color: #646cff;
+}
+
+#home .message {
+  color: #757b8f;
 }

@@ -95,7 +95,8 @@ ul {
   margin-left: 25px;
   padding: 0.2rem;
   display: block;
-  color: #ccd6f6;
+  /* color: #ccd6f6; */
+  color: #a9b3d1;
   position: relative;
 }
 
