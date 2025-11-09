@@ -1,10 +1,15 @@
 .container {
   width: 100%;
   max-width: var(--max-content-width);
+  height: 50rem;
   margin: 0 auto;
   /* padding-left: var(--padding-horizontal); */
   /* padding-right: var(--padding-horizontal); */
   box-sizing: border-box;
+}
+
+.content-padding {
+  padding-top: 5rem;
 }
 
 @media (max-width: 1440px) {
