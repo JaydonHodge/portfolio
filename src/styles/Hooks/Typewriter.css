@@ -2,7 +2,7 @@
   font-weight: 200;
   display: inline-block;
   color: #d1dcff;
-  animation-delay: 0.2s;
+  animation-delay: 0.3s;
 }
 
 .cursor.solid {
@@ -15,7 +15,7 @@
   -ms-animation: 0.7s blink step-end infinite;
   -o-animation: 0.7s blink step-end infinite;
   animation: 0.7s blink step-end infinite;
-  animation-delay: 0.5s;
+  animation-delay: 0.3s;
 }
 
 @keyframes blink {
