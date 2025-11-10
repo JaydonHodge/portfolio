@@ -11,7 +11,7 @@
 }
 
 #home p {
-  color: #646cff;
+  color: #6a9bc4;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -41,9 +41,13 @@
 }
 
 #home .home-description p .highlight {
-  color: #646cff;
+  color: #6a9bc4;
 }
 
 #home .message {
   color: #757b8f;
+}
+
+#home .spacing {
+  height: 10rem;
 }

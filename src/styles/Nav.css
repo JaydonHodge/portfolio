@@ -44,44 +44,41 @@ ul {
 
 /* ================== LOGO BUTTON ==================*/
 .logo {
-  width: 3.5rem;
-  height: 2.7rem;
-  /* background-color: #2a2a37; */
-  /* border: 2px solid #615efc; */
-  /* border-radius: 6px; */
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(85, 124, 157, 0.7);
+  border-radius: 3.5px;
   display: flex;
   transition: ease-in-out 0.2s;
   position: relative;
-  transform: translate(0, 1px);
 }
 
 .nav-bar .logo a {
-  width: 3.5rem;
-  height: 2.7rem;
+  width: 3rem;
+  height: 3rem;
   display: block;
   padding: 0;
 }
 
 .nav-bar .logo a>img {
-  width: 3.5rem;
-  height: 2.7rem;
-  transform: translate(0, 1px);
+  width: 3rem;
+  height: 3rem;
 }
 
 .logo:hover {
   transform: translate(-0.1rem, -0.1rem);
-  /* box-shadow: */
-  /*   rgba(97, 94, 252, 0.4) 0.12rem 0.08rem, */
-  /*   rgba(97, 94, 252, 0.3) 0.14rem 0.12rem, */
-  /*   rgba(97, 94, 252, 0.2) 0.16rem 0.16rem; */
+  box-shadow:
+    rgba(85, 124, 157, 0.3) 0.12rem 0.08rem,
+    rgba(85, 124, 157, 0.2) 0.14rem 0.12rem,
+    rgba(85, 124, 157, 0.1) 0.16rem 0.16rem;
 }
 
 .logo:active {
   transform: scale(0.85);
-  /* box-shadow: */
-  /*   rgba(97, 94, 252, 0) 1.5px 1.5px, */
-  /*   rgba(97, 94, 252, 0) 2px 2px, */
-  /*   rgba(97, 94, 252, 0) 3px 3px; */
+  box-shadow:
+    rgba(85, 124, 157, 0) 1.5px 1.5px,
+    rgba(85, 124, 157, 0) 2px 2px,
+    rgba(85, 124, 157, 0) 3px 3px;
 }
 
 /* ================== PAGE LINKS ==================*/
@@ -102,7 +99,7 @@ ul {
 
 .nums {
   font-weight: 500;
-  color: #646cff;
+  color: #557c9d;
   text-decoration: none;
 }
 
@@ -113,7 +110,7 @@ ul {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #615efc;
+  background-color: #557c9d;
   margin-left: 5px;
   transition: ease-in-out 0.2s;
 }
@@ -155,7 +152,7 @@ ul {
 }
 
 .nav-bar li>a:hover {
-  color: #615efc;
+  color: #557c9d;
 }
 
 .nav-bar li>a {
@@ -169,7 +166,7 @@ ul {
 /* ================== RESUME BUTTON ==================*/
 button.resume {
   margin-left: 30px;
-  border: 2px solid #615efc;
+  border: 2px solid #557c9d;
   line-height: 2.5;
   padding: 0 10px;
   font-size: 1rem;
@@ -186,19 +183,19 @@ button.resume {
 button.resume:hover {
   transform: translate(-0.2rem, -0.2rem);
   box-shadow:
-    rgba(97, 94, 252, 0.4) 0.08rem 0.08rem,
-    rgba(97, 94, 252, 0.3) 0.12rem 0.12rem,
-    rgba(97, 94, 252, 0.2) 0.14rem 0.14rem;
-  color: #615efc;
+    rgba(85, 124, 157, 0.4) 0.08rem 0.08rem,
+    rgba(85, 124, 157, 0.3) 0.10rem 0.10rem,
+    rgba(85, 124, 157, 0.2) 0.12rem 0.12rem;
+  color: #557c9d;
 }
 
 button.resume:active {
   transition: ease-in-out 0.1s;
   transform: scale(0.95);
   box-shadow:
-    rgba(97, 94, 252, 0) 1.5px 1.5px,
-    rgba(97, 94, 252, 0) 2px 2px,
-    rgba(97, 94, 252, 0) 3px 3px;
+    rgba(85, 124, 157, 0) 1.5px 1.5px,
+    rgba(85, 124, 157, 0) 2px 2px,
+    rgba(85, 124, 157, 0) 3px 3px;
 }
 
 /* ================== DIVIDER ==================*/

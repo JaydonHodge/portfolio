@@ -27,6 +27,7 @@ function Home() {
         Head on down below and explore the rest of the page to find out
         more!
       </p>
+      <div className='spacing'></div>
     </section>
   )
 }
