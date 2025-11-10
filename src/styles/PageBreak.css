@@ -1,0 +1,7 @@
+.page-break {
+  display: flex;
+  background-color: #4d515c;
+  border-radius: 10px;
+  width: 100%;
+  height: 1px;
+}

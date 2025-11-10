@@ -1,13 +1,21 @@
 import '../styles/Home.css'
+import Typewriter from '../components/Hooks/Typewriter';
+import { useState } from 'react';
+
 
 function Home() {
+  const [firstDone, setFirstDone] = useState(false);
+
   return (
     <section role='region' id='home'>
       <p>Hi, my name is</p>
-      <h1 id="name">Jaydon Hodge.</h1>
-      <h1 id="title">&lt;I am a Software Engineer/&gt;</h1>
-      <div className='cursor'>
-        <h1>_</h1>
+      <div className='typing-area'>
+        <h1 id="name">
+          <Typewriter text='Jaydon Hodge. ' speed={70} needCursor={false} onDone={() => setFirstDone(true)} />
+        </h1>
+        <h1 id="title">
+          {firstDone && <Typewriter text='<I am a Software Engineer/>' speed={70} needCursor={true} />}
+        </h1>
       </div>
       <div className="home-description">
         <p id="first">The purpose of this web page is to serve as my <span className="highlight">personal portfolio</span> and <span className="highlight">online presence hub</span>.

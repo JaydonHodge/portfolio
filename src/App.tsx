@@ -4,6 +4,7 @@ import './variables.css';
 import Nav from './components/Nav';
 import Home from './components/Home';
 import Footer from './components/Footer';
+import PageBreak from './components/PageBreak';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Nav />
           <div className='content-padding' />
           <Home />
+          <PageBreak />
         </div>
       </main>
 
