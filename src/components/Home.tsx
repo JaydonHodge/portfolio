@@ -14,11 +14,11 @@ function Home() {
           <Typewriter text='Jaydon Hodge. ' speed={70} needCursor={false} onDone={() => setFirstDone(true)} />
         </h1>
         <h1 id="title">
-          {firstDone && <Typewriter text='<I am a Software Engineer/>' speed={70} needCursor={true} />}
+          {firstDone && <Typewriter text='<I&apos;m a Software Engineer/>' speed={70} needCursor={true} />}
         </h1>
       </div>
       <div className="home-description">
-        <p id="first">The purpose of this web page is to serve as my <span className="highlight">personal portfolio</span> and <span className="highlight">online presence hub</span>.
+        <p id="first">I built this web page to serve as my <span className="highlight">personal portfolio</span> and <span className="highlight">online presence hub</span>.
           It is meant to be a place to display my ventures within my tech career, as well as a place of information for anyone that is
           interested in learning more about who I am and what I do.
         </p>
