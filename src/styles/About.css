@@ -1,0 +1,73 @@
+#about {
+    scroll-margin-top: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flexbox;
+}
+
+#about .section-header {
+    height: 5rem;
+    background-color: #16161d;
+    padding-left: 1rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+#about .section-header h1 {
+    color: #abb5d4;
+    font-size: 2.5rem;
+    display: flex;
+}
+
+#about .section-header h1 .nums {
+    font-family: "SF Rounded Bold";
+    color: #557c9d;
+    text-decoration: none;
+}
+
+#about .section-content {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+}
+
+#about .img-container {
+    /* control max size */
+    max-width: 250px;
+    /* centering */
+    /* margin: 0 auto; */
+    /* reserving space before image loads */
+    aspect-ratio: 16 / 9;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 2rem;
+}
+
+#about .img-container img {
+    display: block;
+    width: 15rem;
+    height: auto;
+    border: 1px solid #557c9d;
+    border-radius: 7px;
+}
+
+#about .about-text {
+    display: flex;
+    flex-direction: column;
+    color: #e0def4;
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+#about .about-text .ps {
+    font-size: 1.2rem;
+}
+
+
+#about .about-text .ps .bold {
+    font-family: "SF Rounded Black";
+}

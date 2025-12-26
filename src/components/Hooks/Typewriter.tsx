@@ -14,46 +14,46 @@ import { useState, useEffect, type JSX } from 'react';
 
 // Define w/ interface that the Typewriter component accepts a single props object with fields text & speed of the respective types
 interface TypewriterProps {
-  text: string;
-  speed: number;
-  needCursor: boolean;
-  onDone?: () => void;
+    text: string;
+    speed: number;
+    needCursor: boolean;
+    onDone?: () => void;
 }
 
-//“Typewriter component expects a props object with text & speed keys of respective types”
+//“Typewriter component expects a props object with text, speed, and needCursor keys of respective types”
 function Typewriter({ text, speed, needCursor, onDone }: TypewriterProps): JSX.Element {
-  const [displyedText, setDisplayedText] = useState('');
-  const [index, setIndex] = useState(0);
+    const [displyedText, setDisplayedText] = useState('');
+    const [index, setIndex] = useState(0);
 
-  const done = index >= text.length;  // flag for if the cursor should be solid or blinking
+    const done = index >= text.length;  // flag for if the cursor should be solid or blinking
 
-  const [cursor, setCursor] = useState(true); // flag for if the cursor should stay after line is done writing
+    const [cursor, setCursor] = useState(true); // flag for if the cursor should stay after line is done writing
 
-  useEffect(() => {
-    if (index < text.length) {
-      const timeout = setTimeout(() => {
-        setDisplayedText(prevText => prevText + text[index]);
-        setIndex(prevIndex => prevIndex + 1);
-      }, speed);
+    useEffect(() => {
+        if (index < text.length) {
+            const timeout = setTimeout(() => {
+                setDisplayedText(prevText => prevText + text[index]);
+                setIndex(prevIndex => prevIndex + 1);
+            }, speed);
 
-      return () => clearTimeout(timeout);
+            return () => clearTimeout(timeout);
+        }
+
+        if (index === text.length && needCursor) {
+            onDone?.();
+        }
+        else if (index === text.length && (!needCursor)) {
+            setCursor(false);
+            onDone?.();
+        }
+
+    }, [index, speed, text]);
+
+    // returning current state of displayed text to <Typewriter/> in Home.tsx
+    if (cursor) {
+        return <span> {displyedText}<span className={`cursor ${done ? 'blink' : 'solid'}`}>█</span> </span>;
     }
-
-    if (index === text.length && needCursor) {
-      onDone?.();
-    }
-    else if (index === text.length && (!needCursor)) {
-      setCursor(false);
-      onDone?.();
-    }
-
-  }, [index, speed, text]);
-
-  // returning current state of displayed text to <Typewriter/> in Home.tsx
-  if (cursor) {
-    return <span> {displyedText}<span className={`cursor ${done ? 'blink' : 'solid'}`}>█</span> </span>;
-  }
-  return <span> {displyedText}<span className={`cursor ${done ? 'blink' : 'solid'}`}></span> </span>;
+    return <span> {displyedText}<span className={`cursor ${done ? 'blink' : 'solid'}`}></span> </span>;
 };
 
 export default Typewriter;

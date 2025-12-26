@@ -1,0 +1,27 @@
+#contact {
+    scroll-margin-top: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flexbox;
+}
+
+#contact .section-header {
+    height: 5rem;
+    background-color: #16161d;
+    margin-top: 2rem;
+    padding-left: 1rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+#contact .section-header h1 {
+    color: #abb5d4;
+    display: flex;
+}
+
+#contact .section-header h1 .nums {
+    font-weight: 500;
+    color: #557c9d;
+    text-decoration: none;
+}

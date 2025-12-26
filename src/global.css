@@ -1,49 +1,58 @@
 @font-face {
-  font-family: JetBrains Mono;
-  src: url(/fonts/JetBrainsMono-Regular.ttf);
+    font-family: JetBrains Mono;
+    src: url(/fonts/JetBrainsMono-Regular.ttf);
 }
 
 @font-face {
-  font-family: SF Pro Text;
-  src: url(/fonts/SFProText-Regular.ttf);
+    font-family: SF Rounded;
+    src: url(/fonts/SF-Pro-Rounded-Regular.otf);
 }
 
+@font-face {
+    font-family: SF Rounded Bold;
+    src: url(/fonts/SF-Pro-Rounded-Bold.otf);
+}
+
+@font-face {
+    font-family: SF Rounded Black;
+    src: url(/fonts/SF-Pro-Rounded-Black.otf);
+}
 
 :root {
-  font-family: "JetBrains Mono", monospace, sans-serif;
-  font-optical-sizing: none;
-  font-size: 100%;
-  line-height: normal;
-  font-weight: 400;
+    font-family: "SF Rounded", monospace, sans-serif;
+    font-optical-sizing: none;
+    font-size: 100%;
+    line-height: normal;
+    font-weight: 400;
 
-  color-scheme: dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #1e1f28;
+    color-scheme: dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #232136;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  scrollbar-width: auto;
-  scroll-margin-top: 1rem;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-width: auto;
+    scroll-margin-top: 1rem;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 main {
-  flex: 1;
+    flex: 1;
 }

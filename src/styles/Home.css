@@ -1,53 +1,56 @@
 #home {
-  scroll-margin-top: 5rem;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  color: #d1dcff;
+    scroll-margin-top: 5rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    color: #e0def4;
 }
 
 #home .typing-area {
-  height: 10rem;
+    height: 10rem;
 }
 
 #home p {
-  color: #6a9bc4;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+    color: #6a9bc4;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 #home h1 {
-  font-size: 4rem;
-  font-weight: 500;
-  margin: 0;
+    font-size: 4rem;
+    font-weight: 500;
+    margin: 0;
 }
 
 #home #title {
-  color: #757b8f;
+    color: #908caa;
+    font-size: 3.5rem;
 }
 
 #home .cursor {
-  margin-top: -0.7rem;
-  line-height: 1;
+    margin-top: -0.7rem;
+    line-height: 1;
 }
 
 #home .home-description {
-  margin-top: 1.5rem;
-  width: 50%;
+    margin-top: 1.5rem;
+    width: 50%;
 }
 
 #home .home-description p {
-  color: #757b8f;
+    font-size: 1.5rem;
+    color: #908caa;
 }
 
 #home .home-description p .highlight {
-  color: #6a9bc4;
+    color: #6a9bc4;
 }
 
 #home .message {
-  color: #757b8f;
+    font-size: 1.5rem;
+    color: #908caa;
 }
 
 #home .spacing {
-  height: 10rem;
+    height: 10rem;
 }
