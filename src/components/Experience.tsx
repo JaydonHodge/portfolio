@@ -8,7 +8,10 @@ function Experience() {
                 <h1><span className='nums'>02.</span>Experience</h1>
             </div>
             <div className='section-content'>
-                <button className='card1'>
+                <a href='https://thicc-lab.org/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='card1'>
                     <p className='date'>2024 ― 2026</p>
                     <div className='job'>
                         <h2 className='position'>Undergraduate Research Assistant · The Human In Computing &amp; Cognition Lab <FiArrowUpRight className='arrow' /> </h2>
@@ -30,7 +33,7 @@ function Experience() {
                             </li>
                         </div>
                     </div>
-                </button>
+                </a>
             </div>
         </section>
     )
