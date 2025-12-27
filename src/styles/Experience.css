@@ -55,6 +55,7 @@
 
 #experience .section-content .card1:hover {
     color: #557c9d;
+    box-shadow: -1.5px -1.5px 0px #393552;
     background-color: #2a273f;
 }
 
@@ -68,7 +69,13 @@
 #experience .section-content .card1 .position .arrow {
     position: relative;
     top: 5px;
+    right: -5px;
     scale: 120%;
+    transition: ease-in-out 0.1s;
+}
+
+#experience .section-content .card1:hover .arrow {
+    transform: translate(5px, -5px);
 }
 
 #experience .section-content .card1 .job-desc {
