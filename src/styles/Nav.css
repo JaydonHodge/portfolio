@@ -42,8 +42,15 @@ ul {
     margin: 0;
 }
 
+.nav-bar .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
 /* ================== LOGO BUTTON ==================*/
-.logo {
+.left .logo {
     width: 3rem;
     height: 3rem;
     background-color: rgba(85, 124, 157, 0.7);
@@ -81,13 +88,44 @@ ul {
         rgba(85, 124, 157, 0) 3px 3px;
 }
 
+/* ================== CONTACT LINKS ==================*/
+.nav-content .left .contact-list {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    list-style: none;
+    gap: 28px;
+}
+
+.left .contact-list li {
+    display: flex;
+}
+
+.left .contact-list li>a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    scale: 155%;
+    line-height: 0;
+    cursor: pointer;
+    color: #a9b3d1;
+    transition: ease-in-out 0.2s;
+}
+
+.left .contact-list li>a:hover {
+    color: #dce4fc;
+}
+
 /* ================== PAGE LINKS ==================*/
 .nav-bar .nav-content .nav-list {
     display: flex;
     flex-direction: row;
 }
 
-.nav-bar li>a {
+.nav-bar .nav-list li>a {
     text-decoration: none;
     margin-left: 25px;
     padding: 0.2rem;
@@ -104,7 +142,7 @@ ul {
     text-decoration: none;
 }
 
-.nav-bar li>a::before {
+.nav-bar .nav-list li>a::before {
     content: "";
     position: absolute;
     top: 100%;
