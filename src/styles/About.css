@@ -88,6 +88,11 @@
 #about .about-text .ps .vid-link .drop {
     height: 1.5rem;
     width: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+#about .about-text .ps .vid-link .drop.up {
+    transform: rotate(-180deg);
 }
 
 #about .about-text .ps .vid-link:hover::after {
@@ -98,5 +103,38 @@
     bottom: 3px;
     height: 1.3px;
     background-color: currentColor;
-    /* uses the button's text color */
+    /* using the button's text color */
+}
+
+#about .about-text .video {
+    display: flex;
+    background-color: #2a273f;
+    border-radius: 7px;
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease, opacity 0.8s ease;
+}
+
+#about .about-text .video.show {
+    opacity: 1;
+    max-height: 35rem;
+}
+
+#about .about-text .video .youtube {
+    height: 35rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a273f;
+}
+
+#about .about-text .video .youtube iframe {
+    height: 95%;
+    width: 95%;
+    border: 2px solid #9ccfd8;
+    /* width style color */
+    border-radius: 5px;
 }
