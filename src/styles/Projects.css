@@ -25,3 +25,20 @@
     color: #557c9d;
     text-decoration: none;
 }
+
+#projects .section-content .project-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style-type: "⁃ ";
+    color: #908caa;
+    font-size: 1.2rem;
+    gap: 20px;
+    width: 60rem;
+    margin-left: 2rem;
+    justify-content: flex-start;
+}
+
+#projects .section-content .project-list li {
+    width: 100%;
+}
