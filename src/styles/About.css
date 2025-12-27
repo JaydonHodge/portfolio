@@ -20,12 +20,6 @@
     display: flex;
 }
 
-#about .section-header h1 .nums {
-    font-family: "SF Rounded Bold";
-    color: #557c9d;
-    text-decoration: none;
-}
-
 #about .section-content {
     display: flex;
     flex-direction: row;
@@ -64,10 +58,45 @@
 }
 
 #about .about-text .ps {
+    display: flex;
+    flex-direction: row;
     font-size: 1.2rem;
+    align-items: center;
 }
 
 
 #about .about-text .ps .bold {
     font-family: "SF Rounded Black";
+}
+
+#about .about-text .ps .vid-link {
+    padding: 2px 10px;
+    border-radius: 15px;
+    display: inline-flex;
+    background: none;
+    border: none;
+    align-items: center;
+    font-size: 1.2rem;
+    height: fit-content;
+    cursor: pointer;
+    margin-left: 2rem;
+    color: #3e8fb0;
+    text-decoration: none;
+    position: relative;
+}
+
+#about .about-text .ps .vid-link .drop {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+#about .about-text .ps .vid-link:hover::after {
+    content: '';
+    position: absolute;
+    left: 11px;
+    right: 14.5px;
+    bottom: 3px;
+    height: 1.3px;
+    background-color: currentColor;
+    /* uses the button's text color */
 }

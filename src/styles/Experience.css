@@ -25,3 +25,58 @@
     color: #557c9d;
     text-decoration: none;
 }
+
+#experience .section-content .card1 {
+    display: flex;
+    flex-direction: row;
+    color: #e0def4;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    height: 28rem;
+    width: 66rem;
+    border-radius: 7px;
+    background-color: #232136;
+    border: none;
+    text-align: left;
+    transition: ease-in-out 0.1s;
+    cursor: pointer;
+}
+
+#experience .section-content .card1 .date {
+    margin-left: 1rem;
+    color: #908caa;
+}
+
+#experience .section-content .card1 .job {
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#experience .section-content .card1:hover {
+    color: #557c9d;
+    background-color: #2a273f;
+}
+
+#experience .section-content .card1 .position {
+    font-family: 'SF Rounded Medium';
+    font-size: 1.5rem;
+    position: relative;
+    margin-left: 1rem;
+}
+
+#experience .section-content .card1 .position .arrow {
+    position: relative;
+    top: 5px;
+    scale: 120%;
+}
+
+#experience .section-content .card1 .job-desc {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    color: #908caa;
+    list-style-type: "⁃ ";
+    gap: 20px;
+    width: 47rem;
+}

@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: SF Rounded Medium;
+    src: url(/fonts/SF-Pro-Rounded-Medium.otf);
+}
+
+@font-face {
     font-family: SF Rounded Bold;
     src: url(/fonts/SF-Pro-Rounded-Bold.otf);
 }

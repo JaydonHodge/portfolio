@@ -94,11 +94,12 @@ ul {
     display: block;
     /* color: #ccd6f6; */
     color: #a9b3d1;
+    font-size: 1.2rem;
     position: relative;
 }
 
 .nums {
-    font-weight: 500;
+    font-family: "JetBrains Mono";
     color: #557c9d;
     text-decoration: none;
 }
