@@ -1,16 +1,117 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jaydon Hodge • Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --max-content-width: 1250px;
+            --padding-horizontal: 1rem;
+        }
+
+        @font-face {
+            font-family: JetBrains Mono;
+            src: url(/fonts/JetBrainsMono-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: SF Rounded;
+            src: url(/fonts/SF-Pro-Rounded-Regular.otf);
+        }
+
+        @font-face {
+            font-family: SF Rounded Medium;
+            src: url(/fonts/SF-Pro-Rounded-Medium.otf);
+        }
+
+        @font-face {
+            font-family: SF Rounded Bold;
+            src: url(/fonts/SF-Pro-Rounded-Bold.otf);
+        }
+
+        @font-face {
+            font-family: SF Rounded Black;
+            src: url(/fonts/SF-Pro-Rounded-Black.otf);
+        }
+
+        :root {
+            font-family: "SF Rounded", monospace, sans-serif;
+            font-optical-sizing: none;
+            font-size: 100%;
+            line-height: normal;
+            font-weight: 400;
+
+            color-scheme: dark;
+            color: rgba(255, 255, 255, 0.87);
+            background-color: #232136;
+
+            font-synthesis: none;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            scrollbar-width: auto;
+            scroll-margin-top: 1rem;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        .container {
+            width: 100%;
+            max-width: var(--max-content-width);
+            height: auto;
+            margin: 0 auto;
+            /* padding-left: var(--padding-horizontal); */
+            /* padding-right: var(--padding-horizontal); */
+            box-sizing: border-box;
+        }
+
+        .content-padding {
+            padding-top: 5rem;
+        }
+
+        @media (max-width: 1440px) {
+            .container {
+                max-width: 1100px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .container {
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-  </body>
+</body>
+
 </html>
