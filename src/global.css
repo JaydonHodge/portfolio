@@ -1,22 +1,22 @@
 @font-face {
-    font-family: Nunito;
-    src: url(/fonts/Nunito-VariableFont_wght.ttf);
-}
-
-@font-face {
-    font-family: Nunito Italic;
-    src: url(/public/fonts/Nunito-Italic-VariableFont_wght.ttf);
-}
-
-@font-face {
     font-family: Finlandica;
     src: url(/fonts/Finlandica-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: Finlandica Italic;
-    src: url(/fonts/Finlandica-Italic-VariableFont_wght.ttf);
+    font-family: Nunito;
+    src: url(/fonts/Nunito-VariableFont_wght.ttf);
 }
+
+/* @font-face { */
+/*     font-family: Nunito Italic; */
+/*     src: url(/public/fonts/Nunito-Italic-VariableFont_wght.ttf); */
+/* } */
+
+/* @font-face { */
+/*     font-family: Finlandica Italic; */
+/*     src: url(/fonts/Finlandica-Italic-VariableFont_wght.ttf); */
+/* } */
 
 :root {
     font-family: "Nunito", monospace, sans-serif;

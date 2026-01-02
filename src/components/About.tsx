@@ -36,7 +36,7 @@ function About() {
                 <div className='about-text'>
                     <p>Hey Jaydon here! I'm a Full-Stack Software Engineer based in Baltimore. I recently graduated from The Pennsylvania State University with a Bachelor's in Computer Science. I am continuing my education with a Masters of Science in Data Science.</p>
 
-                    <p>For almost my entire life I've been into game development which is what drove me to pursue this sort of career in tech. So in my free time I like to improve my coding skills by tinkering and working on side projects that I think are fun and satisfy my love for games.</p>
+                    <p>For almost my entire life I've been into game development which is what drove me to pursue this sort of career in tech. So in my free time I like to improve my coding skills by tinkering and working on side projects that I think are fun and satiate my love for games.</p>
 
                     <span className='ps'>
 
