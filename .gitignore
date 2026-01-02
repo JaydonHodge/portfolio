@@ -9,6 +9,10 @@ frontend/dist-ssr/
 backend/dist/
 backend/dist-ssr/
 
+# Environment files
+.env
+.env.local
+
 # Logs
 logs
 *.log
