@@ -1,3 +1,6 @@
+import './global.css';
+import './layout.css';
+import './variables.css';
 import Nav from './components/Nav';
 import Home from './components/Home';
 import Footer from './components/Footer';

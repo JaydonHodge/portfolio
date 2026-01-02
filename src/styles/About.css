@@ -16,8 +16,9 @@
 
 #about .section-header h1 {
     color: #abb5d4;
-    font-size: 2.5rem;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #about .section-content {
@@ -66,7 +67,7 @@
 
 
 #about .about-text .ps .bold {
-    font-family: "SF Rounded Black";
+    font-weight: 800;
 }
 
 #about .about-text .ps .vid-link {

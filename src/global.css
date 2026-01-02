@@ -1,30 +1,25 @@
 @font-face {
-    font-family: JetBrains Mono;
-    src: url(/fonts/JetBrainsMono-Regular.ttf);
+    font-family: Nunito;
+    src: url(/fonts/Nunito-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: SF Rounded;
-    src: url(/fonts/SF-Pro-Rounded-Regular.otf);
+    font-family: Nunito Italic;
+    src: url(/public/fonts/Nunito-Italic-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: SF Rounded Medium;
-    src: url(/fonts/SF-Pro-Rounded-Medium.otf);
+    font-family: Finlandica;
+    src: url(/fonts/Finlandica-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: SF Rounded Bold;
-    src: url(/fonts/SF-Pro-Rounded-Bold.otf);
-}
-
-@font-face {
-    font-family: SF Rounded Black;
-    src: url(/fonts/SF-Pro-Rounded-Black.otf);
+    font-family: Finlandica Italic;
+    src: url(/fonts/Finlandica-Italic-VariableFont_wght.ttf);
 }
 
 :root {
-    font-family: "SF Rounded", monospace, sans-serif;
+    font-family: "Nunito", monospace, sans-serif;
     font-optical-sizing: none;
     font-size: 100%;
     line-height: normal;
@@ -60,4 +55,17 @@ body {
 
 main {
     flex: 1;
+}
+
+.nums {
+    font-weight: 500;
+    font-family: 'Finlandica';
+    color: #557c9d;
+    text-decoration: none;
+}
+
+.section-header h1 .nums {
+    display: flex;
+    position: relative;
+    top: -1px;
 }

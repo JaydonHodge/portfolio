@@ -18,12 +18,14 @@
 #experience .section-header h1 {
     color: #abb5d4;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #experience .section-header h1 .nums {
-    font-weight: 500;
-    color: #557c9d;
-    text-decoration: none;
+    display: flex;
+    position: relative;
+    top: -1px;
 }
 
 #experience .section-content .card1 {
@@ -33,8 +35,8 @@
     text-decoration: none;
     font-size: 1.3rem;
     margin-top: 0.5rem;
-    height: 28rem;
-    width: 65rem;
+    height: 30rem;
+    width: 67rem;
     border-radius: 7px;
     background-color: #232136;
     border: none;

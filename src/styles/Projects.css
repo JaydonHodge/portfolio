@@ -18,12 +18,8 @@
 #projects .section-header h1 {
     color: #abb5d4;
     display: flex;
-}
-
-#projects .section-header h1 .nums {
-    font-weight: 500;
-    color: #557c9d;
-    text-decoration: none;
+    align-items: center;
+    justify-content: center;
 }
 
 #projects .section-content .project-list {
