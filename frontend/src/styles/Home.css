@@ -4,6 +4,8 @@
     width: 100%;
     flex-direction: column;
     color: #e0def4;
+    position: relative;
+    left: 1rem;
 }
 
 #home .typing-area {
