@@ -11,7 +11,7 @@ function Nav() {
                     <div className='left'>
                         <div className="logo">
                             <a id="logo-anch" href="#home">
-                                <img src="/portfolio/images/logo.png" alt="Jaydon Hodge portfolio logo" />
+                                <img src="/images/logo.png" alt="Jaydon Hodge portfolio logo" />
                             </a>
                         </div>
                         <ul className='contact-list'>
