@@ -32,3 +32,6 @@ npm run dev
 ```
 docker-compose up --build
 ```
+
+### Architecure
+RESTful API with CRUD operations, fully decoupled frontend/backend.
