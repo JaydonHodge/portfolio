@@ -36,7 +36,7 @@
     font-size: 1.3rem;
     margin-top: 0.5rem;
     height: 30rem;
-    width: 67rem;
+    width: 69.5rem;
     border-radius: 7px;
     background-color: #232136;
     border: none;
@@ -63,7 +63,6 @@
 }
 
 #experience .section-content .card1 .position {
-    font-family: 'SF Rounded Medium';
     font-size: 1.5rem;
     position: relative;
     margin-left: 1rem;

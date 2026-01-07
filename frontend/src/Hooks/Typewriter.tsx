@@ -1,4 +1,4 @@
-import '../../styles/Hooks/Typewriter.css'
+import '../styles/Hooks/Typewriter.css'
 
 import { useState, useEffect, type JSX } from 'react';
 // NOTE:

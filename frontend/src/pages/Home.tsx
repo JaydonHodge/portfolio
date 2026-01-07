@@ -1,5 +1,5 @@
 import '../styles/Home.css'
-import Typewriter from '../components/Hooks/Typewriter';
+import Typewriter from '../Hooks/Typewriter';
 import { useState } from 'react';
 
 
