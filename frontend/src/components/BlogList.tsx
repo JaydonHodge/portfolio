@@ -13,12 +13,23 @@ function BlogList() {
         const fetchPosts = async () => {
             try {
                 setLoading(true);
-                const data = await blogService.getAllPosts();
-                setPosts(data);
                 setError(null);
-            } catch (err) {
-                setError('Failed to fetch posts');
-                console.error(err);
+
+                const data = await blogService.getAllPosts();
+
+                // Ensuring data is an array before setting
+                if (Array.isArray(data)) {
+                    setPosts(data);
+                } else {
+                    console.error('Expected array, got:', typeof data, data);
+                    setError('Invalid data format from API');
+                    setPosts([]);
+                }
+            } catch (err: any) {
+                console.error('Fetch error:', err);
+                console.error('Error response:', err.response?.data);
+                setError(err.response?.data?.message || err.message || 'Failed to fetch posts');
+                setPosts([]);
             } finally {
                 setLoading(false);
             }
@@ -28,7 +39,8 @@ function BlogList() {
     }, []);
 
     if (loading) return <div>Loading...</div>;
-    if (error) return <div>Error: {error}</div>;
+    if (error) return <div style={{ color: 'red' }}>Error: {error}</div>;
+    if (posts.length === 0) return <div>No posts yet</div>;
 
     return (
         <div className='post-scroll-container'>

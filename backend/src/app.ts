@@ -7,7 +7,9 @@ const app = express();
 // Middleware  -- for production
 const allowedOrigins = [
     'http://localhost:5173', // Local development (Docker port I think)
-    process.env.FRONTEND_URL || '', // Production Vercel URL
+    'https://jaydonhodge.vercel.app',           //  Main Domain
+    'https://portfolio-frontend-git-main-yajenios-projects.vercel.app', // Production Vercel domain
+    'https://jaydonhodge.io',                   // Custom Domain
 ];
 
 app.use(cors({  // Allowing requests from frontend
