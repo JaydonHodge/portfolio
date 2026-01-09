@@ -1,0 +1,66 @@
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #2a273f;
+    border-radius: 10px;
+    padding: 1rem;
+    height: 44rem;
+    justify-content: space-between;
+}
+
+form .title-input {
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    height: 3rem;
+    background-color: #191724;
+}
+
+form .content-input {
+    position: relative;
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    overflow-y: scroll;
+    height: 23rem;
+    background-color: #191724;
+}
+
+form .author-input {
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    height: 3rem;
+    background-color: #191724;
+}
+
+form .submit-input {
+    position: relative;
+    height: 3rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border: 2px solid #557c9d;
+    text-align: center;
+    color: #ccd6f6;
+    border-radius: 5px;
+    background-color: #2a2a37;
+    transition: ease-in-out 0.2s;
+}
+
+form .submit-input:hover {
+    transform: translate(-0.2rem, -0.2rem);
+    box-shadow:
+        rgba(85, 124, 157, 0.4) 0.08rem 0.08rem,
+        rgba(85, 124, 157, 0.3) 0.10rem 0.10rem,
+        rgba(85, 124, 157, 0.2) 0.12rem 0.12rem;
+    color: #557c9d;
+}
+
+form .submit-input:active {
+    transition: ease-in-out 0.1s;
+    transform: scale(0.95);
+    box-shadow:
+        rgba(85, 124, 157, 0) 1.5px 1.5px,
+        rgba(85, 124, 157, 0) 2px 2px,
+        rgba(85, 124, 157, 0) 3px 3px;
+}

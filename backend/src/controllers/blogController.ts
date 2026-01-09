@@ -5,8 +5,16 @@ import { BlogPost } from '../types/blog.types';
 // GET all blog posts
 export const getAllPosts = async (req: Request, res: Response) => {
     try {
+        // Formatting the dates using PostgreSQL builtin TO_CHAR() func otherwise JavaScript will add extra at the end of 'date' object
         const result = await pool.query(
-            'SELECT * FROM blog_posts ORDER BY created_at DESC'
+            `SELECT 
+                id,
+                title,
+                content,
+                author,
+                TO_CHAR(created_at, 'YYYY-MM-DD') as created_at,
+                TO_CHAR(updated_at, 'YYYY-MM-DD') as updated_at
+            FROM blog_posts`
         );
         res.json(result.rows);
     } catch (error) {

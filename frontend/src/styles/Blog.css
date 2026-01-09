@@ -1,5 +1,31 @@
-.temp-padding {
+.blog-page {
     display: flex;
-    position: relative;
-    height: 50rem;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 44rem;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.blog-page .content-padding {
+    height: 2rem;
+}
+
+.blog-page h1 {
+    padding: 0.5rem;
+    padding-left: 2rem;
+    background-color: #16161d;
+    border-radius: 10px;
+}
+
+.blog-page .list-container {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.blog-page .create-post-container {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
 }

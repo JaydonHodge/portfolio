@@ -1,16 +1,24 @@
-import { blogService } from '../services/blogServices';
-import type { BlogPost } from '../services/blogServices';
-import { useEffect, useState } from 'react';
-
 import '../styles/Blog.css'
+
+import BlogList from '../components/BlogList';
+import CreatePost from '../components/CreatePost';
 
 function Blog() {
     return (
-        <section role='region' id='blog'>
-            <div className='temp-padding' />
-            <h1>TEST</h1>
-        </section>
+        <div>
+            <div className='content-padding' />
+            <span className='blog-page'>
+                <div className='list-container'>
+                    <h1>Blog Posts</h1>
+                    <BlogList />
+                </div>
+                <div className='create-post-container'>
+                    <h1>Create New Post</h1>
+                    <CreatePost />
+                </div>
+            </span>
+        </div>
     )
 }
 
-export default Blog;
+export default Blog

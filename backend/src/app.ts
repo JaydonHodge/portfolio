@@ -10,7 +10,7 @@ const allowedOrigins = [
     process.env.FRONTEND_URL || '', // Production Vercel URL
 ];
 
-app.use(cors({  //(allowing requests from frontend)
+app.use(cors({  // Allowing requests from frontend
     origin: (origin, callback) => {
         // Allow requests with no origin
         if (!origin) return callback(null, true);

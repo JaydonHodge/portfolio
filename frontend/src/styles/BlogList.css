@@ -1,0 +1,22 @@
+.post-scroll-container {
+    background-color: #2a273f;
+    border-radius: 10px;
+    max-height: 600px;
+    overflow-y: scroll;
+    /*  prevents content from jumping when scrollbar appears */
+    padding-right: 10px;
+}
+
+.post-scroll-container article {
+    display: flex;
+    flex-direction: column;
+    background-color: #393552;
+    border-radius: 10px;
+    padding: 1.5rem;
+    padding-top: 0;
+    margin: 1rem;
+}
+
+.post-scroll-container article h2 {
+    margin-bottom: 0;
+}
