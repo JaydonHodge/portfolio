@@ -17,6 +17,13 @@ function Blog() {
                     <CreatePost />
                 </div>
             </span>
+            <div className='next-steps'>
+                <h1>Things To Add</h1>
+                <ul>
+                    <li>User Authentication w/ password hashing to control who can post blogs</li>
+                    <li>Ability to update and delete blogs</li>
+                </ul>
+            </div>
         </div>
     )
 }

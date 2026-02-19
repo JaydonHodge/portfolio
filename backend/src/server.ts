@@ -14,7 +14,7 @@ async function connectWithRetry(retries = MAX_RETRIES): Promise<void> {
         console.error(`Error connecting to database (${MAX_RETRIES - retries + 1}/${MAX_RETRIES}):`, err instanceof Error ? err.message : err);
 
         if (retries > 0) {
-            console.log(`⏳ Retrying in ${RETRY_DELAY / 1000} seconds...`);
+            console.log(`Retrying in ${RETRY_DELAY / 1000} seconds...`);
             await new Promise(resolve => setTimeout(resolve, RETRY_DELAY));
             return connectWithRetry(retries - 1);
         } else {

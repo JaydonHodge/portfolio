@@ -29,3 +29,25 @@
     flex-direction: column;
     width: 48%;
 }
+
+.next-steps {
+    display: flex;
+    flex-direction: column;
+}
+
+.next-steps h1 {
+    padding: 0.5rem;
+    padding-left: 2rem;
+    background-color: #16161d;
+    border-radius: 10px;
+}
+
+.next-steps ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: circle;
+    font-size: 2rem;
+    align-items: flex-start;
+    margin-left: 5rem;
+    margin-top: 0;
+}
